@@ -1,0 +1,165 @@
+header.c-site-header {
+    margin: $space-section 0;
+    position: relative;
+    @include below(l) {
+        margin: 1rem 0;
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- LOGO --
+//------------------------------------------------------------------------------
+
+h1.c-site-header__logo {
+    margin: 0 0 0 1rem;
+    width: 110px;
+    font-size: ms(3);
+    @include below(l) {
+        width: 80px;
+    }
+
+    a {
+        display: block;
+    }
+
+    svg {
+        display: block;
+        @include size(100%, auto);
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- MENUS & HAMBURGER --
+//------------------------------------------------------------------------------
+
+nav.c-site-header__hamburger {
+    position: absolute;
+    top: 20px;
+    right: 1rem;
+    @include below(l) {
+        top: 24px;
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- MENUS --
+//------------------------------------------------------------------------------
+
+div.c-site-header__menus-wrap {
+    @include below(l) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        box-shadow: 0 0 4px 1px rgba(0,0,0,0.4);
+        background-color: $color-body;
+        overflow-y: auto;
+        transform-origin: 0% 0%;
+        transform: translate(-101%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        @include size(300px, 100vh);
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- MENU --
+//------------------------------------------------------------------------------
+
+ul.c-site-header__menu {
+  text-align: right;
+  @include below(l) {
+    text-align: left;
+  }
+
+  > li {
+    display: inline-block;
+    margin-left: 2.14rem;
+    @include below(l) {
+      display: block;
+      margin: 0;
+
+      &:not(:first-child) {
+        border-top: 1px solid $color-divider;
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      @include below(l) {
+        padding: 1em;
+      }
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      fill: $color-text;
+      @include size(20px, auto);
+
+      &:hover path {
+        fill: $color-accent;
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------------------
+//-- MENU -- SECONDARY & SOCIAL --
+//------------------------------------------------------------------------------
+
+ul.c-site-header__menu--secondary,
+ul.c-site-header__menu--social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include below(l) {
+    position: static;
+  }
+}
+
+//------------------------------------------------------------------------------
+//-- MENU -- SOCIAL --
+//------------------------------------------------------------------------------
+
+ul.c-site-header__menu--social {
+  > li {
+    margin-left: 1rem;
+    @include below(l) {
+      display: inline-block;
+      border: 0 !important;
+      margin-left: 4px;
+    }
+  }
+}
+
+//------------------------------------------------------------------------------
+//-- MENU -- SECONDARY --
+//------------------------------------------------------------------------------
+
+ul.c-site-header__menu--secondary {
+  right: 120px;
+}
+
+//------------------------------------------------------------------------------
+//-- MENU -- PRIMARY --
+//------------------------------------------------------------------------------
+
+ul.c-site-header__menu--primary {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    @include below(l) {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    > li {
+      margin-left: 2.67rem;
+      @include below(l) {
+        margin: 0;
+      }
+    }
+}

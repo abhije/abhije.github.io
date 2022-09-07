@@ -1,0 +1,72 @@
+
+//------------------------------------------------------------------------------
+//-- BTN --
+//------------------------------------------------------------------------------
+
+.o-btn {
+    background-color: $color-accent;
+    color: $color-text-alt;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    padding: 1.3em 1.5em;
+    line-height: 1;
+    border-radius: 3em;
+    @include below(l) {
+      font-size: 1.25rem;
+    }
+
+    &:hover {
+        background-color: darken($color-accent, 8%);
+        color: $color-text-alt;
+    }
+
+    svg {
+        display: inline-block;
+        vertical-align: middle;
+        fill: $color-text-alt;
+        margin-left: 5em;
+        @include size(1rem);
+    }
+}
+
+.o-btn--arr {
+    padding-right: 5em;
+    position: relative;
+
+    &::after {
+        content: ">";
+        line-height: 0;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 1.2em;
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- BTN -- ALT --
+//------------------------------------------------------------------------------
+
+.o-btn--alt {
+    background-color: $color-body-alt;
+    color: $color-text-alt;
+
+    &:hover {
+        background-color: darken($color-body-alt, 8%);
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- BTN -- White --
+//------------------------------------------------------------------------------
+
+.o-btn--white {
+    background-color: $color-body;
+    color: $color-accent;
+
+    &:hover {
+        background-color: darken($color-body, 5%);
+        color: $color-accent;
+    }
+}

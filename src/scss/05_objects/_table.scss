@@ -1,0 +1,21 @@
+
+.o-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    @include below(l) {
+        display: block;
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- COLUMN --
+//------------------------------------------------------------------------------
+
+.o-table__col {
+    display: table-cell;
+    vertical-align: top;
+    @include below(l) {
+        display: block;
+    }
+}

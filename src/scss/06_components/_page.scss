@@ -1,0 +1,15 @@
+
+.c-page--404 {
+  text-align: center;
+  margin-bottom: $gap-section-y;
+}
+
+article.c-page__post {
+  padding: $gap-section-y 0;
+  border-top: 1px solid $color-divider;
+  border-bottom: 1px solid $color-divider;
+
+  h1 {
+    margin-top: 0;
+  }
+}

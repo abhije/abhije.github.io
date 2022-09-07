@@ -1,0 +1,6 @@
+@mixin fit-image($margin: 0) {
+  max-height: 100%;
+  margin: auto;
+  position: absolute;
+  @include take-space($margin);
+}

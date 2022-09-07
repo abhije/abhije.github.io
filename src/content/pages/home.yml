@@ -1,0 +1,92 @@
+#-----------------------------------------------------------------------------
+#-- BANNER --
+#-----------------------------------------------------------------------------
+banner:
+  title: Tame the supply chain chaos.
+  intro: |
+    Build a smarter supply chain with the leading packaging manufacturing
+    company.
+  cta:
+    title: About Company
+    url: '/company'
+    image: factory.png
+
+  #-----------------------------------------------------------------------------
+  #-- BRANDS --
+  #-----------------------------------------------------------------------------
+
+brands:
+  title: Trusted by world's leading brands
+  items:
+    - name: Nissan
+      image: brand_nissan.jpg
+    - name: Hyundai
+      image: brand_hyundai.jpg
+    - name: Grundfos
+      image: brand_grundfos.jpg
+    - name: Tesa
+      image: brand_tesa.jpg
+    - name: Parker
+      image: brand_parker.jpg
+    - name: Nippon
+      image: brand_nippon.jpg
+    - name: Yamaha
+      image: brand_yamaha.jpg
+    - name: Brakes
+      image: brand_brakes.jpg
+    - name: Wabco
+      image: brand_wabco.jpg
+    - name: Wittur
+      image: brand_wittur.jpg
+    - name: Delphi
+      image: brand_delphi.jpg
+    - name: Lucas
+      image: brand_lucas.jpg
+
+#-----------------------------------------------------------------------------
+#-- PRODUCTS CTA --
+#-----------------------------------------------------------------------------
+
+products_cta:
+  title: Millions of units produced every week, flawlessly.
+  cta:
+    title: Products & Services
+    url: '/products'
+  image: boxes.png
+
+#-----------------------------------------------------------------------------
+#-- MOTTO VISION & MISSION --
+#-----------------------------------------------------------------------------
+motto_vision_mission:
+  title: At Surya Packages, what we strive for...
+  boxes:
+    - title: Our Motto
+      content: |
+        Strict adherence to quality standards of the highest order achieved
+        through state of the art technology and consistent effort towards
+        improvising ourselves.
+      icon: horn
+      bg_color: \#eee
+    - title: Our Vision
+      content: |
+        Endeavor and innovate ingenious concept, tailor-made for specific
+        business needs, making packing simple, efficient, economical and
+        reusable.
+      icon: bulb
+      bg_color: \#eee
+    - title: Our Mission
+      content: |
+        To achieve our vision through fairness, business ethics, building long
+        term relationships with all our associates, customers, partners and
+        employees.
+      icon: rocket
+      bg_color: \#eee
+#-----------------------------------------------------------------------------
+#-- QUALITY CTA --
+#-----------------------------------------------------------------------------
+quality_cta:
+  title: More reliable, cost-effective and sustainable.
+  cta:
+    title: Quality Inspection
+    url: '/quality'
+  image: factory_man.jpg

@@ -1,0 +1,114 @@
+site_title: Surya Packages
+site_description: Tame the supply chain chaos.
+
+#-------------------------------------------------------------------------------
+#-- PRIMARY MENU --
+#-------------------------------------------------------------------------------
+
+site_primary_menu:
+  - title: Company
+    url: /company
+
+  - title: Products & services
+    url: /products
+
+  - title: Manufacturing
+    url: /manu
+
+  - title: Quality Inspection
+    url: /qua
+
+  - title: Contact
+    url: /coctact
+
+#-------------------------------------------------------------------------------
+#-- SECONDARY MENU --
+#-------------------------------------------------------------------------------
+
+site_secondary_menu:
+  - title: Home
+    url: "/"
+
+  - title: Sitemap
+    url: "/sitemap"
+
+  - title: Career
+    url: "/career"
+
+#-------------------------------------------------------------------------------
+#-- SOCIAL MENU --
+#-------------------------------------------------------------------------------
+
+site_social_menu:
+  - title: Facebook,
+    url: "#"
+    icon: "fb"
+
+  - title: Twitter
+    url: "#"
+    icon: "tw"
+
+  - title: Linkedin
+    url: "#"
+    icon: "ln"
+
+#-------------------------------------------------------------------------------
+#-- FOOTER GET STARTED --
+#-------------------------------------------------------------------------------
+
+site_get_started:
+  title: Start your first project in minutes.
+  subtitle: Let's begin!
+  cta:
+    title: Get Started Today
+    url: "/"
+
+#-------------------------------------------------------------------------------
+#-- FOOTER MENU --
+#-------------------------------------------------------------------------------
+
+site_footer_menu:
+  - title: Home
+    url: "/"
+
+  - title: Company
+    url: "/company"
+    submenu:
+      - title: Overview
+        url: "/company/overview"
+
+      - title: What We do
+        url: "/company/what-we-do"
+
+      - title: Why us
+        url: "/company/why-us"
+
+      - title: Timeline
+        url: "/company/timeline"
+
+  - title: Products
+    url: "/products"
+    submenu:
+      - title: Carton
+        url: /products/carton
+
+      - title: Wooden
+        url: /products/wooden
+
+  - title: Manufacturing
+    url: "/manu"
+    submenu:
+      - title: Facilities
+        url: /manu/facilities
+
+      - title: Machineries
+        url: /manu/facilities
+
+      - title: Quality Inspection
+        url: /manu/quality
+
+  - title: Careers
+    url: "/careers"
+
+  - title: Contact
+    url: "/contact"

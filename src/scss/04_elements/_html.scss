@@ -1,0 +1,53 @@
+
+html {
+    font-size: $font-size-base;
+    @include below(s) {
+        font-size: 11px;
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- BODY ----------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+body {
+    font-size: 1rem;
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $color-body;
+    color: $color-text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+//------------------------------------------------------------------------------
+//-- ANCHOR --------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+a {
+    color: $color-text-link;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-text-link-hover;
+    }
+
+    &.active {
+      color: $color-accent !important;
+      font-weight: bold !important;
+    }
+}
+
+//------------------------------------------------------------------------------
+//-- PARAGRAPH -----------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+p {
+    margin: ms(0) 0;
+}
+
+img {
+    height: auto;
+}

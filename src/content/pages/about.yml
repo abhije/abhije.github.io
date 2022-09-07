@@ -1,0 +1,12 @@
+about_page:
+#-------------------------------------------------------------------------------
+#-- BANNER --
+#-------------------------------------------------------------------------------
+
+  banner:
+    title: Tame the supply chain chaos.
+    intro: Build a smarter supply chain with the leading packaging manufacturing company.
+    cta:
+      title: About Company
+      url: '/company'
+    image: factory.png

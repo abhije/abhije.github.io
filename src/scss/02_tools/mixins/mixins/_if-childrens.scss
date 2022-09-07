@@ -1,0 +1,12 @@
+@mixin if-childrens($number-of-children, $sibling-selector: null) {
+    @if ($sibling-selector) {
+        &:first-child:nth-last-child(#{$number-of-children}),
+        &:first-child:nth-last-child(#{$number-of-children}) ~ #{$sibling-selector} {
+            @content;
+        }
+    } @else {
+        &:first-child:nth-last-child(#{$number-of-children}) {
+            @content
+        }
+    }
+}

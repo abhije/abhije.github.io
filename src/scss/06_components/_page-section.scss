@@ -1,0 +1,29 @@
+//------------------------------------------------------------------------------
+//-- TITLE --
+//------------------------------------------------------------------------------
+
+h4.c-page__title {
+    margin: 0 0 1em 0;
+}
+
+h5.c-page__title {
+    margin: 0 0 2.4em 0;
+    font-size: 1.47rem;
+    text-align: center;
+}
+
+div.c-page__inner-m {
+  margin: 0 $gap-section-x;
+}
+
+div.c-page__inner-s {
+  margin: 0 $gap-section-x-s;
+
+  article {
+    padding: $gap-cta-y $gap-cta-x;
+    max-width: 600px;
+    @include below(l) {
+      padding: $gap-cta-x;
+    }
+  }
+}

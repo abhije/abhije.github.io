@@ -1,0 +1,18 @@
+
+//------------------------------------------------------------------------------
+//-- FLEX GRID --
+//------------------------------------------------------------------------------
+
+.o-flex-grid {
+    @include grid($gutter: $default-grid-gutter);
+    @include below(l) {
+        display: block;
+    }
+
+    > .o-flex-grid__col {
+        @include grid-col($gutter: $default-grid-gutter);
+        @include below(l) {
+            @include grid-col($col: 1, $gutter: 0);
+        }
+    }
+}

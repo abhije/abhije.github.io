@@ -1,0 +1,9 @@
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@import "ellipsis-multiline";
+@import "ellipsis-multiline-simple";
+@import "ellipsis-lines";
